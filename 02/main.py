@@ -29,7 +29,6 @@ class Game:
         self.game_number = game_number
 
     def __set_game_sets(self, sets: str):
-        self.sets = []
         for game_set in sets.split(";"):
             for cube in game_set.split(","):
                 count, color = cube.strip().split(" ", 1)
